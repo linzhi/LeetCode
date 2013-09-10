@@ -18,10 +18,12 @@ private:
     bool is_symmetric(TreeNode *l, TreeNode *r) {
         if (l == NULL && r == NULL)
             return true;
-        else if (l == NULL || r == NULL || l->val != r->val)
+        else if (l == NULL || r == NULL)
             return false;
 
-        is_symmetric(l->left, r->right) && is_symmetric(l->right, r->left);
+        return is_symmetric(l->left, r->right) && 
+               is_symmetric(l->right, r->left) &&
+               l->val == r->val;
     }
 };
 
