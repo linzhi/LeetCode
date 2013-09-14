@@ -15,10 +15,10 @@ public:
             double y = pow(x, n / 2);
             return y * y;
         } else if (n > 0) {
-            double y = pow(x, (n - 1) / 2); 
+            double y = pow(x, n / 2); 
             return y * y * x;
         } else if (n < 0) {
-            double y = pow(x, (n + 1) / 2); 
+            double y = pow(x, n / 2); 
             return y * y / x;
         }
     }
