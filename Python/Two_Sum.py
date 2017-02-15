@@ -4,7 +4,6 @@
 class Solution(object):
     def twoSum(self, nums, target):
         if len(nums) < 2: return
-        #nums.sort()
 
         result = []
         for i in xrange(0, len(nums)):
